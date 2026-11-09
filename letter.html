@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100d12">
+  <meta name="description" content="A little place made with love, for Sheena, love — from Frank.">
+  <title>For My Love ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <nav class="nav">
+    <a class="brand" href="index.html">F <span>♡</span> S</a>
+    <button class="music-toggle" id="musicToggle" aria-pressed="false" title="Toggle background music">
+      <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span id="musicLabel">Play our song</span>
+    </button>
+  </nav>
+
+  <main>
+<section class="section letter-section" id="letter">
+      <div class="section-kicker">01 / A LETTER FROM FRANK</div>
+      <div class="letter-card">
+        <div class="letter-flower">✳</div>
+        <p class="script">My dearest love,</p>
+        <h2>Some feelings are<br>too big for a text.</h2>
+        <div class="letter-body">
+          <p>Hi, teee. ♡</p>
+          <p>I made this little space for you because you deserve to be reminded how loved you are — not just on our anniversary, but on ordinary days, difficult days, and every day in between.</p>
+          <p>Thank you for being part of my life, for the memories we've made, and for all the little things that have become special simply because they're with you. You make my world warmer in ways I can't always explain.</p>
+          <p>I'm not promising that every day will be perfect. I'm promising to keep choosing you, to keep learning you, and to keep finding reasons to make you smile. I hope we get to collect so many more memories, laugh at our own little jokes, and look back one day at how far we've come.</p>
+          <p>Happy anniversary, Te. You will always have a special place in my heart.</p>
+          <p class="signoff">Always yours,<br><span>Frank ♡</span></p>
+        </div>
+        <div class="letter-bottom">MADE WITH ALL MY HEART <span>♥</span></div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="memories">
+      <div class="section-kicker">02 / LITTLE MOMENTS, BIG LOVE</div>
+      <div class="section-heading">
+        <p class="script">Our memories</p>
+        <h2>Pieces of <em>forever.</em></h2>
+        <p class="muted">Every picture holds a feeling I want to keep.</p>
+      </div>
+      <div class="gallery" id="gallery">
+        <button class="photo-card photo-tall" data-photo="0" aria-label="Open memory one">
+          <img src="images/us-1.jpg.jpg" alt="Frank and Sheena on the beach at sunset" loading="lazy" decoding="async">
+          <span class="photo-caption"><small></small>My favorite place is beside you.</span>
+        </button>
+        <button class="photo-card photo-offset" data-photo="1" aria-label="Open memory two">
+          <img src="images/us-2.jpg.jpg" alt="Frank and Sheena laughing over coffee" loading="lazy" decoding="async">
+          <span class="photo-caption"><small></small>Little moments, endlessly treasured.</span>
+        </button>
+        <button class="photo-card" data-photo="2" aria-label="Open memory three">
+          <img src="images/us-3.jpg.jpg" alt="Frank and Sheena on their first date" loading="lazy" decoding="async">
+          <span class="photo-caption"><small></small>For all the love I can't fit into words.</span>
+        </button>
+      </div>
+      <p class="gallery-tip">esmiringhoy ♡</p>
+    </section>
+
+
+    <section class="section game-section" id="love-game">
+      <div class="section-kicker">03 / ONE LITTLE QUESTION</div>
+      <div class="game-shell">
+        <div class="game-topline"><span>♡ JUST BETWEEN US ♡</span><span id="gameProgress"></span></div>
+        <div class="game-orbit" aria-hidden="true"><span class="orbit-heart">♥</span><span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span><span class="orbit-dot dot-three"></span></div>
+        <p class="script">I have something to ask you, love…</p>
+        <h2>I love you,<br><em>do you love me too?</em></h2>
+        <p class="game-intro">Choose your answer carefully, Ninyaaa. ♡</p>
+        <div class="game-card" id="gameCard">
+          <div class="game-emoji" id="gameEmoji">🥹</div>
+          <h3 id="gameQuestion">Do you love your Frank?</h3>
+          <div class="love-choice-area" id="gameAnswers">
+            <button class="game-answer love-yes" id="loveYes" type="button">I love you too! ♡</button>
+            <button class="game-answer love-no" id="loveNo" type="button">I don't love you 🙄</button>
+          </div>
+          <p class="game-feedback" id="gameFeedback" aria-live="polite">Psst… try clicking the second option. 😈</p>
+        </div>
+        <p class="game-footnote">A LITTLE LOVE, A LITTLE MISCHIEF, ALL FROM FRANK. ♡</p>
+      </div>
+    </section>
+
+    <section class="section promise-section">
+      <div class="section-kicker">04 / A LITTLE PROMISE</div>
+      <div class="promise-mark">“</div>
+      <blockquote>I don't need a perfect love story.<br>I just want a real one — <em>with you.</em></blockquote>
+      <p>One day at a time. One memory at a time. Always us.</p>
+      <div class="heart-row">♡ &nbsp; ♡ &nbsp; ♡</div>
+    </section>
+
+    <section class="section countdown-section" id="anniversary">
+      <div class="section-kicker">05 / OUR SPECIAL DAY</div>
+      <p class="script">Counting down to us</p>
+      <h2>November 11, <em>2026</em></h2>
+      <p class="muted">Another chapter, another reason to celebrate you.</p>
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div><strong id="days">--</strong><span>DAYS</span></div>
+        <div><strong id="hours">--</strong><span>HOURS</span></div>
+        <div><strong id="minutes">--</strong><span>MINUTES</span></div>
+        <div><strong id="seconds">--</strong><span>SECONDS</span></div>
+      </div>
+      <p class="date-note" id="dateNote">Until our special day ♡</p>
+    </section>
+
+    <section class="final-section">
+      <div class="final-glow"></div>
+      <p class="script">To my Sheena, love</p>
+      <h2>My today.<br>My tomorrow.<br><em>My favorite always.</em></h2>
+      <p>No matter where life takes us, I hope we keep finding our way back to each other.</p>
+      <button class="primary-btn" id="surpriseBtn">One last thing for you ♡</button>
+      <div class="surprise-message" id="surpriseMessage" hidden>
+        <span class="big-heart">♥</span>
+        <p>If I had to choose all over again,<br>I'd still choose you.</p>
+        <strong>I love you, love. — Frank</strong>
+      </div>
+      <footer>MADE WITH LOVE BY FRANK <span>♡</span> FOR SHEENA</footer>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">×</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous photo">‹</button>
+    <img id="lightboxImage" src="" alt="">
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next photo">›</button>
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <audio id="bgMusic" loop preload="none">
+    <!-- Add your own royalty-free MP3 as music.mp3 and uncomment the source below. -->
+    <!-- <source src="music.mp3" type="audio/mpeg"> -->
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

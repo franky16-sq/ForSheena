@@ -1,4 +1,4 @@
-const musicToggle = document.getElementById('musicToggle');
+﻿const musicToggle = document.getElementById('musicToggle');
 const musicLabel = document.getElementById('musicLabel');
 const bgMusic = document.getElementById('bgMusic');
 let musicReady = false;
@@ -170,3 +170,4 @@ document.head.appendChild(heartStyle);
     }
   });
 })();
+
