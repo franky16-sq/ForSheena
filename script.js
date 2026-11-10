@@ -31,29 +31,17 @@ musicToggle.addEventListener('click', async () => {
   }
 });
 
-// Anniversary date: November 11, 2026. Countdown uses the visitor's local time.
-const anniversaryDate = new Date(2026, 10, 11, 0, 0, 0);
-const ids = ['days', 'hours', 'minutes', 'seconds'];
-function updateCountdown() {
+// Days together since November 11, 2024, based on the visitor's local calendar date.
+const relationshipStart = new Date(2024, 10, 11);
+function updateDaysTogether() {
   const now = new Date();
-  let diff = anniversaryDate.getTime() - now.getTime();
-  const note = document.getElementById('dateNote');
-  if (diff <= 0) {
-    document.getElementById('countdown').innerHTML =
-      '<div class="anniversary-now"><strong>♡</strong><span>HAPPY ANNIVERSARY</span></div>';
-    note.textContent = 'Today is our day. I love you, love! ♡';
-    return;
-  }
-  const values = [
-    Math.floor(diff / 86400000),
-    Math.floor((diff % 86400000) / 3600000),
-    Math.floor((diff % 3600000) / 60000),
-    Math.floor((diff % 60000) / 1000)
-  ];
-  ids.forEach((id, i) => document.getElementById(id).textContent = String(values[i]).padStart(2, '0'));
+  const todayUtc = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  const startUtc = Date.UTC(relationshipStart.getFullYear(), relationshipStart.getMonth(), relationshipStart.getDate());
+  const daysTogether = Math.floor((todayUtc - startUtc) / 86400000);
+  document.getElementById('days').textContent = String(Math.max(0, daysTogether));
 }
-updateCountdown();
-setInterval(updateCountdown, 1000);
+updateDaysTogether();
+setInterval(updateDaysTogether, 3600000);
 
 // Photo viewer
 const photoButtons = [...document.querySelectorAll('.photo-card')];
@@ -111,8 +99,6 @@ document.getElementById('surpriseBtn').addEventListener('click', event => {
 const heartStyle = document.createElement('style');
 heartStyle.textContent = '@keyframes floatHeart{to{transform:translateY(-120vh) rotate(35deg);opacity:0}}';
 document.head.appendChild(heartStyle);
-
-
 
 // "I love you too" choice — the no button shrinks while the yes button grows.
 (() => {
